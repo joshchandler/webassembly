@@ -1,0 +1,7 @@
+.idea/
+
+lib/*
+!lib/README.md
+
+build/*
+!build/index.html
