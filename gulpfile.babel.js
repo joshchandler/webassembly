@@ -31,7 +31,7 @@ gulp.task('build', (cb) => {
 
 gulp.task('serve', ['build'], () => {
     $.nodemon({
-        exec: 'cd build && python3 -m http.server 8000',
+        exec: 'python3 -m http.server 8000',
         tasks: runSequence('build', () => {
             gulp.watch(src.cpp, ['cpp']);
         })
